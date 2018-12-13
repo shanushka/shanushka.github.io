@@ -1,0 +1,25 @@
+.container,.exercises,.design{
+    background-color: #d9bf8f;
+    margin:0 50px;
+    width:80%;
+    padding:20px 20px 10px 20px;
+}
+
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+a:hover{
+  color:white;
+
+}
+
+hr.style1{
+	border-top: 1px solid black;
+}
+
+h1{
+  margin:20px 50px;
+}
