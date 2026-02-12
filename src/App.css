@@ -1,65 +1,131 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 .portfolio-main-body {
   display: flex;
-
-  img {
-  height: 750px;
-  width: 380px;
-  }
+  height: 100vh;
+  padding: 32px;
+  box-sizing: border-box;
 }
 
-.portfolio-main-body-right {
-  display: flex;
-  font-size: 32px;
+.portfolio-main-body-right img {
+  height: 750px;
+  width: 380px;
+  object-fit: cover;
+}
 
+.portfolio-block {
+  display: flex;
+  margin-top: 24px;
 }
 
 .box {
   width: 200px;
-  height: 400px;
+  height: 340px;
+  cursor: pointer;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.box-content {
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-self: center; /* Anchor to center */
   align-items: center;
   justify-content: center;
-  
-  /* Use a very short transition for tracking so it feels fast */
-  transition: transform 0.1s ease-out; 
-  will-change: transform;
+  font-size: 28px;
+  user-select: none;
 }
 
-/* When the mouse leaves, we want a SLOW return to center */
-.box:not(.active) {
-  transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
-  transform: translateY(0) !important;
+.page-column {
+  padding: 49px;
+  font-size: 28px;
 }
 
-.box-up {
-  /* clamp(min, preferred, max) */
-  /* -140px is the limit so it doesn't cross the top of the 680px parent */
-  transform: translateY(
-    clamp(-140px, calc(var(--move-y) * 400px), 140px)
-  );
+.page-column-header {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
 }
 
-.box-down {
-  /* Inverted multiplier so it moves opposite to the 'up' boxes */
-  transform: translateY(
-    clamp(-140px, calc(var(--move-y) * -400px), 140px)
-  );
+.portfolio-skills .box-content, .skills-section {
+  background: #d4d888;
 }
-.portfolio-skills { 
-  background-color: #d4d888;
-  
+.portfolio-experience .box-content, .experience-section {
+  background: #dde5e7;
+  color: #111;
 }
-
-.portfolio-experience { 
-  background-color: #dde5e7;
+.portfolio-projects .box-content, .projects-section {
+  background: #f9e394;
+  color: #111;
 }
-
-.portfolio-projects { 
-  background-color: #f9e394;
+.portfolio-education .box-content, .education-section {
+  background: #f5beb9;
+  color: #111;
 }
 
-.portfolio-education { 
-  background-color: #f5beb9;
+/* Overlay mode */
+.box.spinning-zoom .box-content {
+  position: fixed;
+  z-index: 9999;
+
+  left: var(--from-left);
+  top: var(--from-top);
+  width: var(--from-width);
+  height: var(--from-height);
+
+  transform-origin: center;
+  will-change: transform, width, height, top, left, border-radius;
+}
+
+/* OPEN: expand + rotate to fullscreen */
+.box.spinning-zoom.opening .box-content {
+  animation: openSpin 0.9s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+/* CLOSE: shrink to top-of-viewport banner */
+.box.spinning-zoom.closing .box-content {
+  animation: closeSpin 0.65s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes openSpin {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes closeSpin {
+  from {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+    transform: rotate(360deg) scale(1);
+  }
+  to {
+    left: var(--to-left);
+    top: var(--to-top);
+    width: var(--to-width);
+    height: var(--to-height);
+    border-radius: 0; /* banner look */
+    transform: rotate(720deg) scale(1);
+  }
+}
+
+.page-column {
+  height: 100vh;
 }
