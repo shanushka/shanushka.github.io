@@ -1,5 +1,5 @@
-import { useRef, useState } from "react";
-import image from "../../assets/anushka-portfolio.png";
+import { useRef, useState, use } from "react";
+import image from "../../assets/anushka.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
 
@@ -7,14 +7,20 @@ import Skill from "./Skills";
 import Project from "./Projects";
 import Experience from "./Experience";
 import Education from "./Education";
+import  {getResume} from "../../services/resume";
 
 function Home() {
   const skillRef = useRef(null);
+  const resume = getResume();
+
+  console.log("resume", resume )
+
   const projectRef = useRef(null);
   const experienceRef = useRef(null);
   const educationRef = useRef(null);
 
   const [spinning, setSpinning] = useState({ id: null, phase: null });
+
 
   const startTransition = (ref, id, e) => {
     const rect = e.currentTarget.getBoundingClientRect();
@@ -58,8 +64,8 @@ function Home() {
       <div className="portfolio-main-body">
         <div className="portfolio-main-body-left">
           <div>
-            <h1>Hi, this is Anushka Shrestha</h1>
-            <h2>Full Stack Software developer</h2>
+            <div className="portfolio-header">Hello, I'm <span className="bold">Anushka Shrestha</span></div>
+            <div className="portfolio-sub-header bold">Full Stack Developer</div>
             <p>
               Six years of experience building web applications using React,
               TypeScript, .NET, Python, NodeJS, SQL and cloud-native systems. Experienced in delivering end
@@ -67,18 +73,19 @@ function Home() {
               and cloud deployment. Focused on building simple and intuitive features for complicated problems that
               make a better experience for the user.
             </p>
-          </div>
-          <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+            <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
             <a href="https://github.com/shanushka" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} style={{ color: "#24292e" }} size="2xl" />
             </a>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/anushka--shrestha/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedin} size="2xl" style={{ color: "#0077b5" }} />
             </a>
-            <a href="https://medium.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://medium.com/@anushkashrestha24" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faMedium} size="2xl" style={{ color: "#000000" }} />
             </a>
           </div>
+          </div>
+         
           <div className="portfolio-block">
             <div
               onClick={(e) => startTransition(skillRef, "skills", e)}
@@ -86,6 +93,7 @@ function Home() {
                 spinning.id === "skills" ? `spinning-zoom ${spinning.phase}` : ""
               }`}
             >
+              <img className="thumbpin" src="/Logo/thumb-tack.png"/>
               <div className="box-content">Skills</div>
             </div>
 
@@ -95,6 +103,7 @@ function Home() {
                 spinning.id === "experience" ? `spinning-zoom ${spinning.phase}` : ""
               }`}
             >
+              <img className="thumbpin" src="/Logo/thumb-tack.png"/>
               <div className="box-content">Experience</div>
             </div>
 
@@ -104,15 +113,16 @@ function Home() {
                 spinning.id === "project" ? `spinning-zoom ${spinning.phase}` : ""
               }`}
             >
+              <img className="thumbpin" src="/Logo/thumb-tack.png"/>
               <div className="box-content">Projects</div>
             </div>
-
             <div
               onClick={(e) => startTransition(educationRef, "education", e)}
               className={`box portfolio-education ${
                 spinning.id === "education" ? `spinning-zoom ${spinning.phase}` : ""
               }`}
             >
+              <img className="thumbpin" src="/Logo/thumb-tack.png"/>
               <div className="box-content">Education</div>
             </div>
           </div>
@@ -123,7 +133,7 @@ function Home() {
         </div>
       </div>
 
-      <Skill skillRef={skillRef} />
+      <Skill skills={resume.skills_interests} skillRef={skillRef} />
       <Experience experienceRef={experienceRef} />
       <Project projectRef={projectRef} />
       <Education educationRef={educationRef} />

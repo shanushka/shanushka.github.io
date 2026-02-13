@@ -1,0 +1,157 @@
+{
+    "summary": "Full stack Software developer with 6+ years of experience building web applications using React, TypeScript, NodeJS, SQL and cloud-native systems. Experienced in delivering end to end features: from UI/UX prototyping to backend REST APIs, authentication, real-time dashboards, and cloud deployment. Focused on building simple and intuitive features for complicated problems that make a better experience for the user.",
+    "skills_interests": {
+      "Frontend": "JavaScript, React JS, Redux, TypeScript, Angular, React Native, Blazor, Bootstrap",
+      "Backend": "NodeJS, Python, .Net(C#), Go",
+      "Database": "MySQL, PostgreSQL, MongoDB, Redis, NoSQL",
+      "DevOps/OS": "Azure, Kubernetes, Docker, AWS, Linux",
+      "AI Tools": "Copilot, Gemini, ChatGPT",
+      "Version Control/ SDLC/ tools": "Jira, Scrum, Git, Agile, Figma, Kanban",
+      "Other": ""
+    },
+      "experience": [
+        {
+          "company": "SES Americom",
+          "role": "Software Engineer",
+          "location": "Bristow, VA, USA",
+          "startDate": "2024-04",
+          "description": [
+            "Led the redesign of web applications, modernizing both application architecture and website design by restructuring frontend and backend into a loosely coupled modular system using JavaScript, Blazor, and React.",
+            "Prototyped data-dense dashboards in Figma, collaborating with satellite controllers to refine designs, establish visual hierarchy, and surface critical information.",
+            "Designed reusable, stateless React and TypeScript components, decoupling business logic for cross-application reuse.",
+            "Improved dashboard performance by upgrading LightningChart to version 6, eliminating per-frame cursor redraws and reducing lag.",
+            "Reduced network latency by replacing HTTP polling with C# gRPC streaming using Protobuf serialization and persistent TCP connections, supporting 50% more concurrent operators.",
+            "Built real-time and historical data systems using WebSockets/SignalR for live telemetry and GraphQL APIs for historical data across distributed .NET services.",
+            "Deployed scalable satellite operations applications using Azure and Kubernetes with CI/CD automation."
+          ]
+        },
+        {
+          "company": "Southern Illinois University Edwardsville",
+          "role": "Graduate Teaching Assistant",
+          "location": "Edwardsville, IL, USA",
+          "startDate": "2022-08",
+          "endDate": "2023-12",
+          "description": [
+            "Facilitated office hours and supported students in Design and Analysis of Algorithms.",
+            "Assisted students with Database and Web System Development concepts and problem-solving."
+          ]
+        },
+        {
+          "company": "Leapfrog Technology Pvt. Ltd",
+          "role": "Software Engineer",
+          "location": "Kathmandu, Nepal",
+          "startDate": "2018-11",
+          "endDate": "2022-01",
+          "description": [
+            "Led a team of six front-end engineers, driving application design, code reviews, and performance optimization in ReactJS with Redux for centralized state management.",
+            "Built shared GitHub-based frontend component libraries reused across five teams, standardizing UI/UX.",
+            "Implemented Microsoft login using OAuth 2.0 integrated with Azure Functions.",
+            "Developed an API Gateway in Node.js using MVC patterns to centralize routing and authentication.",
+            "Reduced QA testing time by 60% with Mocha-based unit tests for NodeJS services.",
+            "Optimized healthcare RESTful APIs using Go, improving query efficiency and implementing PostgreSQL encryption.",
+            "Improved read performance by migrating SQL-heavy operations to MongoDB, increasing response speed by 30%.",
+            "Containerized services with Docker and implemented CI/CD pipelines across AWS environments.",
+            "Developed AWS Lambda functions for event-driven email notifications.",
+            "Built responsive web applications using HTML5, CSS, Bootstrap, React, and TypeScript."
+          ]
+        },
+        {
+          "company": "LIS Pvt. Ltd",
+          "role": "Software Engineer Intern",
+          "location": "Lalitpur, Nepal",
+          "startDate": "2018-03",
+          "endDate": "2018-07",
+          "description": [
+            "Built AngularJS applications and integrated REST APIs to display data in user interfaces.",
+            "Used PostgreSQL for data storage and retrieval.",
+            "Created low-fidelity wireframes for improving existing websites."
+          ]
+        },
+        {
+          "company": "AMNIL Technologies Pvt. Ltd.",
+          "role": "Trainee",
+          "location": "Lalitpur, Nepal",
+          "startDate": "2017-06",
+          "endDate": "2018-02",
+          "description": [
+            "Built a Windows desktop application for pharmacy management using C# and .NET.",
+            "Implemented CRUD operations in relational databases for data storage and retrieval."
+          ]
+        }
+      ]
+    ,
+    
+    "education": [
+      "Master of Computer Science (GPA : 3.7) Jan 2022 - Dec 2023",
+      "Southern Illinois University Edwardsville Edwardsville, IL ,USA",
+      "Bachelor of Engineering, Computer Engineering Aug 2014 – Sep 2018",
+      "Tribhuvan University Kathmandu, Nepal",
+      "LEADERSHIP & VOLUNTEER EXPERIENCE",
+      "Executive Member of Sagarmatha Nepalese Student Association Aug 2022 - May 2023",
+      "SIUE , Edwardsville, IL",
+      "Microsoft Student Partner at Microsoft Innovation Center , Kathmandu, Nepal Sept 2016 – Sept 2017",
+      "● Mentored students to teach them the basics of programming. Participated in hackathons and boot camps",
+      "Certifications",
+      "Google AI Essentials — Coursera November 18, 2025",
+      "https://www.coursera.org/account/accomplishments/specialization/DAE7L3VIDO1G"
+    ],
+    "projects": [
+      {
+        "title": "Real-Time Satellite Systems Dashboard",
+        "role": "Full Stack Engineer",
+        "technologies": ["gRPC", "C#", "Blazor", "LightningChart"],
+        "startDate": "2023-01",
+        "description": [
+          "Built a real-time satellite monitoring dashboard with lazy loading where telemetry updates automatically as new events are generated, ensuring operators always see the latest system state.",
+          "Created mock gRPC servers to simulate real-time telemetry streams, allowing frontend development and testing to proceed independently of backend data availability.",
+          "Implemented secure frontend authentication flows using SCRAM challenge-response and server-side sessions, leveraging React useContext to manage global authentication state and session persistence."
+        ]
+      },
+      {
+        "title": "Preprocessing Embedding Vectors for Improved Classification of Genres Using Lyrics",
+        "role": "Master’s Project",
+        "technologies": ["Python", "NumPy", "NLP", "Data Visualization", "scikit-learn"],
+        "startDate": "2022-01",
+        "endDate": "2022-12",
+        "description": [
+          "Enhanced music genre classification by refining test datasets through lyrics analysis.",
+          "Implemented lyrics-embedding preprocessing using NumPy and pandas, filtering high cosine-similarity vectors to minimize semantic overlap.",
+          "Improved accuracy for Logistic Regression, Gaussian Naive Bayes, and Neural Network models.",
+          "Contributed improvements to music recommendation systems and advanced natural language processing research."
+        ]
+      },
+      {
+        "title": "Information Retrieval System",
+        "role": "Full Stack Engineer",
+        "technologies": ["TypeScript", "React", "Redux", "NodeJS", "PostgreSQL", "CI/CD", "Docker", "Python", "AWS"],
+        "startDate": "2020-01",
+        "endDate": "2022-12",
+        "description": [
+          "Developed a scalable multi-tenant SaaS application for centralized email management in a React, Node.js, and Python environment.",
+          "Led a front-end development team of five using ReactJS for design reviews and optimized application flow.",
+          "Developed reusable React components with Hooks, including both generic and feature-specific implementations.",
+          "Implemented advanced filtering logic mapping URL parameters to checkbox state, ensuring persistent filters across refreshes and direct links.",
+          "Orchestrated a complex data migration transferring over 100,000 email records from Outlook and Gmail to PostgreSQL, using Redis to optimize data access and maintain responsiveness.",
+          "Deployed applications using Docker containers on AWS and engineered an automated CI/CD pipeline on Buddy to ensure seamless, continuous delivery."
+        ]
+      },
+      {
+        "title": "Management System for Drug Discovery",
+        "role": "Front End Engineer",
+        "technologies": ["JavaScript", "MySQL", "PolymerJS", "HTML", "CSS", "Git", "CI/CD"],
+        "startDate": "2018-01",
+        "endDate": "2019-12",
+        "description": [
+          "Owned features end-to-end from planning through deployment.",
+          "Developed generic, parameter-driven features and reusable components that improved adaptability across modules and reduced duplication.",
+          "Built functionality to transform web-based charts into Excel sheets and vice versa.",
+          "Engineered an advanced filtering system with six distinct criteria to improve user experience, complemented by lazy loading for efficient page rendering.",
+          "Configured Webpack for development, QA, and production environments to streamline deployment workflows."
+        ]
+      }
+    ],
+    "other": [
+      "ANUSHKA SHRESTHA",
+      "VA , US| | github.com/shanushka | anushkashrestha24@gmail.com | www.linkedin.com/in/anushka--shrestha"
+    ]
+  }

@@ -8,37 +8,64 @@ body {
 .portfolio-main-body {
   display: flex;
   height: 100vh;
-  padding: 32px;
   box-sizing: border-box;
 }
 
+.portfolio-main-body-left{
+  padding: 40px;
+  display: flex;
+  width: 65%;
+
+}
+
+.portfolio-main-body-right {
+  width: 35%;
+}
+
 .portfolio-main-body-right img {
-  height: 750px;
-  width: 380px;
+  height: 100vh;
+  width: 100%;
+  min-width: 200px;
   object-fit: cover;
 }
 
 .portfolio-block {
-  display: flex;
   margin-top: 24px;
 }
 
 .box {
-  width: 200px;
-  height: 340px;
+  width: 180px;
+  height: 150px;
   cursor: pointer;
   position: relative;
   flex: 0 0 auto;
+  position: relative;
+  margin-bottom:8px;
+}
+
+.thumbpin {
+  width:24px;
+  position: relative;
+  left: 78px;
+  top: 12px;
+  height: 24px;
+  z-index:999;
 }
 
 .box-content {
   width: 100%;
   height: 100%;
+  transform: rotate(2deg);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 28px;
   user-select: none;
+}
+
+.portfolio-experience {
+  transform: rotate(-4deg);
+
 }
 
 .page-column {
@@ -128,4 +155,32 @@ body {
 
 .page-column {
   height: 100vh;
+}
+
+.skills-section-body {
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.skill-block {
+  width: 80px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-header{
+  font-size: 60px;
+}
+
+.portfolio-sub-header{
+  font-size: 30px;
+  margin-bottom: 50px;
+
+}
+.bold {
+  font-weight: 900;
 }
