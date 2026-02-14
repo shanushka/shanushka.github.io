@@ -62,7 +62,10 @@ function Home() {
   return (
     <div className="App">
       <div className="portfolio-main-body">
-        <div className="portfolio-main-body-left">
+        <div className="portfolio-main-body-left card">
+        <div class="corner top left"></div>
+        <div class="corner bottom left"></div>
+
           <div>
             <div className="portfolio-header">Hello, I'm <span className="bold">Anushka Shrestha</span></div>
             <div className="portfolio-sub-header bold">Full Stack Developer</div>
@@ -134,7 +137,7 @@ function Home() {
       </div>
 
       <Skill skills={resume.skills_interests} skillRef={skillRef} />
-      <Experience experienceRef={experienceRef} />
+      <Experience experience={resume.experience}  experienceRef={experienceRef} />
       <Project projectRef={projectRef} />
       <Education educationRef={educationRef} />
     </div>

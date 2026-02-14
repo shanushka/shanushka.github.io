@@ -1,3 +1,5 @@
+import SkillBlock from "../../components/SkillBlock"
+
 function Skill(props) {
 
     const keys = ['Frontend', 'Backend', 'Database', 'DevOps/OS' , 'AI Tools', 'Other' ]
@@ -7,18 +9,33 @@ function Skill(props) {
                 Skills            
             </div>
             <div className="skills-section-body">
-            <div className="skill-block"> <div><img src="/Logo/cssLogo.svg"/><div className="flex">JS</div></div></div>
-            <img src="/Logo/gitLogo.svg"/>
-            <img src="/Logo/htmlLogo.svg"/>
-            <img src="/Logo/javascriptLogo.svg"/>
-            <img src="/Logo/typescriptLogo.svg"/>
-            <img src="/Logo/reactLogo.svg"/>
-            <img src="/Logo/pythonLogo.svg"/>
-            <img src="/Logo/mysqlLogo.svg"/>
-       
-            </div>
-            <div>
-                {keys.map(key =>  {return (<div keys="key">{key} {props.skills[key]}</div>)})}
+            <SkillBlock logoUrl="/Logo/javascript.png"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/bootstrap.png"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/reactLogo.svg" title="React"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/typescriptLogo.svg" title="Typescript"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/cssLogo.svg" title="CSS"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/nodejs.png"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/angular.png" title="Angular"></SkillBlock>
+
+            <SkillBlock logoUrl="/Logo/pythonLogo.svg" title="Python"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/flask.png" title="Flask"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/go.png" title="GoLang"></SkillBlock>
+
+            <SkillBlock logoUrl="/Logo/mysql.png"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/postgres.png"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/mongodb.png"></SkillBlock>
+
+            <SkillBlock logoUrl="/Logo/gitLogo.svg" title="Git"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/jira.png" title="Jira"></SkillBlock>
+
+            <SkillBlock logoUrl="/Logo/net.png"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/blazor.png"></SkillBlock>
+
+            
+            <SkillBlock logoUrl="/Logo/aws.png"></SkillBlock>
+            <SkillBlock logoUrl="/Logo/azure.png" title="Azure"></SkillBlock>
+
+
             </div>
         </div>
     )
