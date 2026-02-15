@@ -1,4 +1,4 @@
-import { useRef, useState, use } from "react";
+import { useRef, useState, useEffect } from "react";
 import image from "../../assets/anushka.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
@@ -58,6 +58,31 @@ function Home() {
       }, 650);
     }, 900); // must match open animation duration
   };
+  const prefix = "Hello World, I'm ";
+  const name = "ANUSHKA SHRESTHA";
+
+  const [typedPrefix, setTypedPrefix] = useState("");
+  const [typedName, setTypedName] = useState("");
+
+  useEffect(() => {
+    let i = 0;
+    let j = 0;
+    const speed = 40;
+
+    const interval = setInterval(() => {
+      if (i < prefix.length) {
+        setTypedPrefix(prefix.slice(0, i + 1));
+        i++;
+      } else if (j < name.length) {
+        setTypedName(name.slice(0, j + 1));
+        j++;
+      } else {
+        clearInterval(interval);
+      }
+    }, speed);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div className="App">
@@ -67,8 +92,12 @@ function Home() {
         <div class="corner bottom left"></div>
 
           <div className="portfolio-main-body-left-content">
-            <div className="portfolio-header">Hello, I'm <span className="portfolio-name bold">ANUSHKA SHRESTHA</span></div>
-            <div className="portfolio-sub-header bold">Full Stack Developer</div>
+            <div className="portfolio-header">
+                {typedPrefix}
+                <span className="portfolio-name">{typedName}</span>
+                <span className="caret" />
+              </div>
+                <div className="portfolio-sub-header bold">Full Stack Developer</div>
             <p>
               Six years of experience building web applications using React,
               TypeScript, .NET, Python, NodeJS, SQL and cloud-native systems. Experienced in delivering end
@@ -139,7 +168,7 @@ function Home() {
       <Skill skills={resume.skills_interests} skillRef={skillRef} />
       <Experience experience={resume.experience}  experienceRef={experienceRef} />
       <Projects projectRef={projectRef} projects={resume.projects}/>
-      <Education educationRef={educationRef} />
+      <Education certifications = {resume.certifications} education={resume.education} educationRef={educationRef} />
     </div>
   );
 }

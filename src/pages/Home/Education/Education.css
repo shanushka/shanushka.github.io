@@ -1,0 +1,22 @@
+.education-card {
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    width: 800px;
+    border-left: 4px solid black;
+    min-width: 500px;
+}
+
+.education-card-title {
+    font-weight: bold;
+}
+
+.certification-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    width: 800px;
+    min-width: 500px;
+
+}

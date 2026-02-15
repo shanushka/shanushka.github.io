@@ -5,7 +5,7 @@ function Project(props) {
 
     return (
         <div ref = {props.projectRef} className="page-column projects-section" id="section-projects">
-            <div className="projects-section-header">
+            <div className="page-column-header">
                 Personal Projects
             </div>
             <div className="projects-section-body-container">

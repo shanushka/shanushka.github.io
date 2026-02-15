@@ -1,8 +1,6 @@
 import { Chrono } from "react-chrono";
 
 function Experience(props) {
-
-
     const items = props.experience.map(exp => {
         const dateRange = exp.endDate
         ? `(${exp.startDate} - ${exp.endDate})`
@@ -14,7 +12,6 @@ function Experience(props) {
         cardDetailedText: exp.description
     } })
 
-    console.log("experience", props.experience)
     return (
         <div ref = {props.experienceRef} className="page-column experience-section" id="section-experience">
            <div className="page-column-header">

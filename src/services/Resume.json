@@ -81,20 +81,25 @@
       ]
     ,
     
-    "education": [
-      "Master of Computer Science (GPA : 3.7) Jan 2022 - Dec 2023",
-      "Southern Illinois University Edwardsville Edwardsville, IL ,USA",
-      "Bachelor of Engineering, Computer Engineering Aug 2014 – Sep 2018",
-      "Tribhuvan University Kathmandu, Nepal",
-      "LEADERSHIP & VOLUNTEER EXPERIENCE",
-      "Executive Member of Sagarmatha Nepalese Student Association Aug 2022 - May 2023",
-      "SIUE , Edwardsville, IL",
-      "Microsoft Student Partner at Microsoft Innovation Center , Kathmandu, Nepal Sept 2016 – Sept 2017",
-      "● Mentored students to teach them the basics of programming. Participated in hackathons and boot camps",
-      "Certifications",
-      "Google AI Essentials — Coursera November 18, 2025",
-      "https://www.coursera.org/account/accomplishments/specialization/DAE7L3VIDO1G"
+    "education": [{
+      "title": "Master of Computer Science",
+      "gpa": 3.7,
+      "date": "Jan 2022 - Dec 2023",
+      "institution": "Southern Illinois University Edwardsville",
+      "location": "Edwardsville, IL ,USA"
+    },{
+      "title": "Bachelor of Engineering, Computer Engineering",
+      "gpa": 3.7,
+      "date": "Aug 2014 – Sep 2018",
+      "institution": "Tribhuvan University",
+      "location": "Kathmandu, Nepal"
+    }
     ],
+    "certifications" :[{
+      "title":  "Google AI Essentials — Coursera November 18, 2025",
+      "date": "November 18, 2025",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/DAE7L3VIDO1G"
+    }],
     "projects": [
       {
         "title": "Pokemon Catcher",
@@ -136,6 +141,7 @@
       }
     
     ],
+    
     "other": [
       "ANUSHKA SHRESTHA",
       "VA , US| | github.com/shanushka | anushkashrestha24@gmail.com | www.linkedin.com/in/anushka--shrestha"
