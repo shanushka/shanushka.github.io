@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
 
 import Skill from "./Skills";
-import Project from "./Projects";
+import Projects from "../Projects";
 import Experience from "./Experience";
 import Education from "./Education";
 import  {getResume} from "../../services/resume";
@@ -66,8 +66,8 @@ function Home() {
         <div class="corner top left"></div>
         <div class="corner bottom left"></div>
 
-          <div>
-            <div className="portfolio-header">Hello, I'm <span className="bold">Anushka Shrestha</span></div>
+          <div className="portfolio-main-body-left-content">
+            <div className="portfolio-header">Hello, I'm <span className="portfolio-name bold">ANUSHKA SHRESTHA</span></div>
             <div className="portfolio-sub-header bold">Full Stack Developer</div>
             <p>
               Six years of experience building web applications using React,
@@ -138,7 +138,7 @@ function Home() {
 
       <Skill skills={resume.skills_interests} skillRef={skillRef} />
       <Experience experience={resume.experience}  experienceRef={experienceRef} />
-      <Project projectRef={projectRef} />
+      <Projects projectRef={projectRef} projects={resume.projects}/>
       <Education educationRef={educationRef} />
     </div>
   );

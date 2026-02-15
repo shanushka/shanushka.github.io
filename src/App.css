@@ -5,6 +5,33 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "magazineLetter";
+  src: url("/fonts/MagazineLetterByBrntlbrnl-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display Bold";
+  src: url("/fonts/PlayfairDisplay-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.portfolio-name {
+  background-color: #EDEBE6;
+  font-family: "Playfair Display Bold"; 
+  /* font-family: 'Playfair Display', serif; */
+
+}
 .portfolio-main-body {
   display: flex;
   height: 100vh;
@@ -226,6 +253,10 @@ body {
 	color: var(--text);
 }
 
+.portfolio-main-body-left-content {
+  padding-left: 24px;
+  padding-top: 30px;
+}
 
 .card {
 
@@ -233,7 +264,7 @@ body {
   border-left: 1px solid  black;
   width: 65%;
 	position: relative;
-	padding-right: 1rem;
+	padding: 0 2rem ;
 }
 
 	.corner {
@@ -314,4 +345,20 @@ body {
 			}
 		}
   
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #2a2a2a;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.btn-primary:hover {
+  background-color: black;
 }

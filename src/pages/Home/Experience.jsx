@@ -30,10 +30,12 @@ function Experience(props) {
                     }
                   }}
                 theme={{
-                primary: '#0079e6',
-                cardBgColor: '#ffffff',
-                cardTitleColor: '#1f2937',
-                timelineBgColor: '#f5f5f5'
+                    primary: '#1a1a1a',
+                    cardBgColor: '#ffffff',
+                    cardTitleColor: '#1a1a1a',
+                    timelineBgColor: '#222222'
+                    
+                    
                 }}
                 disableToolbar={true} 
                 mode="VERTICAL"

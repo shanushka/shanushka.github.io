@@ -97,22 +97,24 @@
     ],
     "projects": [
       {
-        "title": "Real-Time Satellite Systems Dashboard",
-        "role": "Full Stack Engineer",
-        "technologies": ["gRPC", "C#", "Blazor", "LightningChart"],
-        "startDate": "2023-01",
+        "title": "Pokemon Catcher",
+        "imageUrl": "/pokemon.png",
+        "demoUrl": "https://shanushka.github.io/pokemon/",
+        "githubUrl": "https://github.com/shanushka/pokemon",
+        "technologies": ["Vanilla Javascript", "Html", "CSS", "2D Grid Map"],
+        "startDate": "2019",
         "description": [
-          "Built a real-time satellite monitoring dashboard with lazy loading where telemetry updates automatically as new events are generated, ensuring operators always see the latest system state.",
-          "Created mock gRPC servers to simulate real-time telemetry streams, allowing frontend development and testing to proceed independently of backend data availability.",
-          "Implemented secure frontend authentication flows using SCRAM challenge-response and server-side sessions, leveraging React useContext to manage global authentication state and session persistence."
+          "Built in Vanilaa Javascript without external libraries.",
+          "Character goes through map to catch pokemon"
         ]
       },
       {
-        "title": "Preprocessing Embedding Vectors for Improved Classification of Genres Using Lyrics",
-        "role": "Master’s Project",
-        "technologies": ["Python", "NumPy", "NLP", "Data Visualization", "scikit-learn"],
-        "startDate": "2022-01",
-        "endDate": "2022-12",
+        "title": "Preprocessing Lyric Embeddings",
+        "imageUrl": "/genreClassification.png",
+        "demoUrl": "https://github.com/shanushka/GenreClassification/blob/main/Filtered-Classification-word2vec.ipynb",
+        "githubUrl": "hhttps://github.com/shanushka/GenreClassification/tree/main",
+        "technologies": ["Python", "Machine Learning", "Numpy", "Panda"],
+        "startDate": "2019",
         "description": [
           "Enhanced music genre classification by refining test datasets through lyrics analysis.",
           "Implemented lyrics-embedding preprocessing using NumPy and pandas, filtering high cosine-similarity vectors to minimize semantic overlap.",
@@ -121,34 +123,18 @@
         ]
       },
       {
-        "title": "Information Retrieval System",
-        "role": "Full Stack Engineer",
-        "technologies": ["TypeScript", "React", "Redux", "NodeJS", "PostgreSQL", "CI/CD", "Docker", "Python", "AWS"],
-        "startDate": "2020-01",
-        "endDate": "2022-12",
+        "title": "Flappy Bird",
+        "imageUrl": "/flappybird.png",
+        "demoUrl": "https://shanushka.github.io/js-projects/assignment-3/",
+        "githubUrl": "https://github.com/shanushka/js-projects/tree/master/assignment-3",
+        "technologies": ["Vanilla Javascript", "Html", "CSS", "2D Grid Map"],
+        "startDate": "2019",
         "description": [
-          "Developed a scalable multi-tenant SaaS application for centralized email management in a React, Node.js, and Python environment.",
-          "Led a front-end development team of five using ReactJS for design reviews and optimized application flow.",
-          "Developed reusable React components with Hooks, including both generic and feature-specific implementations.",
-          "Implemented advanced filtering logic mapping URL parameters to checkbox state, ensuring persistent filters across refreshes and direct links.",
-          "Orchestrated a complex data migration transferring over 100,000 email records from Outlook and Gmail to PostgreSQL, using Redis to optimize data access and maintain responsiveness.",
-          "Deployed applications using Docker containers on AWS and engineered an automated CI/CD pipeline on Buddy to ensure seamless, continuous delivery."
-        ]
-      },
-      {
-        "title": "Management System for Drug Discovery",
-        "role": "Front End Engineer",
-        "technologies": ["JavaScript", "MySQL", "PolymerJS", "HTML", "CSS", "Git", "CI/CD"],
-        "startDate": "2018-01",
-        "endDate": "2019-12",
-        "description": [
-          "Owned features end-to-end from planning through deployment.",
-          "Developed generic, parameter-driven features and reusable components that improved adaptability across modules and reduced duplication.",
-          "Built functionality to transform web-based charts into Excel sheets and vice versa.",
-          "Engineered an advanced filtering system with six distinct criteria to improve user experience, complemented by lazy loading for efficient page rendering.",
-          "Configured Webpack for development, QA, and production environments to streamline deployment workflows."
+          "Built in Vanilaa Javascript without external libraries.",
+          "Built Flappy bird game"
         ]
       }
+    
     ],
     "other": [
       "ANUSHKA SHRESTHA",
