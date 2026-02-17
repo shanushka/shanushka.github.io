@@ -63,6 +63,15 @@ body {
   object-fit: cover;
 }
 
+.home-btn-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+
+  .btn {
+    margin-right: 12px;
+  }
+}
+
 .portfolio-block {
   margin-top: 24px;
 }
@@ -265,9 +274,17 @@ body {
   padding-top: 30px;
   display: flex;
   flex-direction: column;
+  position: relative;
   align-items: flex-start;
 }
 
+.home-contact-wrapper {
+  display: "flex";
+  gap: 16px;
+  align-items: "center";
+  position: absolute;
+  bottom: 40px;
+}
 .card {
 
 	height: 80vh;
@@ -357,18 +374,15 @@ body {
   
 }
 
-.btn {
-  cursor: pointer;
-  border: none;
+.experience-timeline-wrapper {
+  height: calc(100vh - 90px);
 }
 
-.btn-primary {
-  background-color: #2a2a2a;
-  color: white;
-  padding: 6px 12px;
-  border-radius: 4px;
+.chrono-card {
+  background: rgba(255, 255, 255, 0.12) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
 }
 
-.btn-primary:hover {
-  background-color: black;
-}

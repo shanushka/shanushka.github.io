@@ -1,0 +1,23 @@
+
+.btn {
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-primary {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  
+  .btn-primary:hover {
+    background-color: black;
+  }
+
+  .btn-title {
+      margin-left:4px;
+  }

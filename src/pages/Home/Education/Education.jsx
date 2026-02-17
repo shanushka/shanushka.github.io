@@ -9,12 +9,15 @@ function Education(props) {
             <div className="page-column-header">
                 Education
             </div>
-            {props.education.map((edu) => {return <EducationCard education={edu}/>})}
+            <div className="education-section-body">
+                {props.education.map((edu) => {return <EducationCard education={edu}/>})}
+            </div>
             <div className="page-column-header">
                 Certifications
+                </div>
+
                 {props.certifications.map((certification) => {return <CertificationCard certification={certification}/>})}
 
-            </div>
         </div>
     )
 

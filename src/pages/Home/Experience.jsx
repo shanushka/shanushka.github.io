@@ -6,7 +6,6 @@ function Experience(props) {
         ? `(${exp.startDate} - ${exp.endDate})`
         : "(Current)";
         return{
-        title: exp.role,
         cardTitle: exp.role,
         cardSubtitle: `${exp.company} ${dateRange}`,
         cardDetailedText: exp.description
@@ -17,6 +16,7 @@ function Experience(props) {
            <div className="page-column-header">
                 Experience
             </div>
+            <div className="experience-timeline-wrapper">
             <Chrono
                 items={items}
                 animation={{
@@ -27,16 +27,20 @@ function Experience(props) {
                     }
                   }}
                 theme={{
-                    primary: '#1a1a1a',
-                    cardBgColor: '#ffffff',
-                    cardTitleColor: '#1a1a1a',
-                    timelineBgColor: '#222222'
+                    primary: "#1a1a1a",
+                    cardBgColor: "#ffffff",
+                    cardTitleColor: "#000000",
+                    cardSubtitleColor: "#000000",
+                    cardDetailsColor: "#000000",
+                    titleColor: "#000000",
+                    timelineBgColor: "#222222"
                     
                     
                 }}
                 disableToolbar={true} 
                 mode="VERTICAL"
             />
+            </div>
         </div>
     )
 

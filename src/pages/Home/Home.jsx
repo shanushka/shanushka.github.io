@@ -2,7 +2,9 @@ import { useRef, useState, useEffect } from "react";
 import image from "../../assets/anushka.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
+import { faEye,faDownload } from "@fortawesome/free-solid-svg-icons";
 
+import Button from "../../components/Button";
 import Skill from "./Skills";
 import Projects from "../Projects";
 import Experience from "./Experience";
@@ -64,6 +66,14 @@ function Home() {
   const [typedPrefix, setTypedPrefix] = useState("");
   const [typedName, setTypedName] = useState("");
 
+  const downloadResume = (name) =>
+  {
+    var link = document.createElement("a");
+    link.download = name;
+    link.href = "/Resume.pdf";
+    link.click();
+  }
+
   useEffect(() => {
     let i = 0;
     let j = 0;
@@ -105,7 +115,12 @@ function Home() {
               and cloud deployment. Focused on building simple and intuitive features for complicated problems that
               make a better experience for the user.
             </p>
-            <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
+            <div className="home-btn-wrapper">
+              <Button iconType={faEye} type="primary" handleClick={() => {  window.open("/Resume.pdf", "_blank");}} title="Preview Resume"></Button>
+              <Button iconType={faDownload} type="primary" handleClick={() => {downloadResume("Resume_Anushka_Shrestha")}} title="Download Resume"></Button>
+            </div>
+
+            <div class="home-contact-wrapper">
             <a href="https://github.com/shanushka" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} style={{ color: "#24292e" }} size="2xl" />
             </a>
