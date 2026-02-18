@@ -152,7 +152,7 @@ body {
 }
 
 .education-section {
-  background-image: url("./flower.png");
+  background-image: url("/flower.png");
   background-position: center;
   background-size: 55%;
 }
