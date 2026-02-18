@@ -106,8 +106,15 @@ body {
   font-size: 26px;
   font-family: 'Playfair Display';
   user-select: none;
+  text-align: center;
 }
 
+.box-content:hover {
+  transform: scale(1.15) rotate(2deg);
+  font-family: 'Playfair Display Bold';
+
+
+}
 .portfolio-experience {
   transform: rotate(-4deg);
 
@@ -124,23 +131,30 @@ body {
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
-  font-family: "Playfair Display";
+  font-family: "Playfair Display bold";
 }
 
 .portfolio-skills .box-content, .skills-section {
   background: #d4d888;
+  color: #2a3b2f;
 }
 .portfolio-experience .box-content, .experience-section {
   background: #dde5e7;
-  color: #111;
+  color: #2a3b2f;
 }
 .portfolio-projects .box-content, .projects-section {
   background: #f9e394;
-  color: #111;
+  color: #2a3b2f;
 }
 .portfolio-education .box-content, .education-section {
   background: #f5beb9;
-  color: #111;
+  color: #2a3b2f;
+}
+
+.education-section {
+  background-image: url("./flower.png");
+  background-position: center;
+  background-size: 55%;
 }
 
 /* Overlay mode */
@@ -221,10 +235,10 @@ body {
   width: 4px;
   height: 1.4em;                 /* one line only */
   line-height: 1;
-  background: orange;
   margin-left: 4px;
-  vertical-align: baseline;    /* keeps it on the text baseline */
-  animation: blink 0.8s step-end infinite;
+  background-color: orange;
+  vertical-align:bottom;   
+  animation: blink 1s step-end infinite;
 }
 
 @keyframes blink { 50% { opacity: 0; } }
@@ -284,6 +298,16 @@ body {
   align-items: "center";
   position: absolute;
   bottom: 40px;
+  a {
+    margin-left: 8px;
+    transition: transform 0.2s ease-in-out;
+
+  }
+}
+
+.social-icon:hover {
+  transform: scale(1.35);
+
 }
 .card {
 

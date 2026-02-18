@@ -8,11 +8,11 @@ function ProjectCard(props) {
                 <img src={props.project.imageUrl}/>
             </div>
             <div className="project-card-content">
-
-                <button className="btn btn-primary" onClick={() => window.open(props.project.demoUrl, "_blank")}>Demo</button>
-                <button className="btn btn-primary" onClick={() => window.open(props.project.githubUrl, "_blank")}>Github</button>
-
-                <div>{props.project.technologies}</div>
+                <div className="project-card-btn-content">
+                    <button className="btn btn-primary" onClick={() => window.open(props.project.demoUrl, "_blank")}>Demo</button>
+                    <button className="btn btn-primary" onClick={() => window.open(props.project.githubUrl, "_blank")}>Github</button>
+                </div>
+                <div>{props.project.technologies.map(technology =>  {return <span style={{marginLeft:6}}>{technology},</span>} )}</div>
 
             </div>
         </div>

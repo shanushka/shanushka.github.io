@@ -37,6 +37,11 @@
     font-size: 14px;
 }
 
+.project-card-btn-content {
+    display: flex;
+    justify-content: flex-start;
+}
+
 .projects-section-header {
     margin-bottom: 40px;
     text-align: center;

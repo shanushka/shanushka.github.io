@@ -2,7 +2,7 @@ import { useRef, useState, useEffect } from "react";
 import image from "../../assets/anushka.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faMedium } from "@fortawesome/free-brands-svg-icons";
-import { faEye,faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faEye,faDownload, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 import Button from "../../components/Button";
 import Skill from "./Skills";
@@ -121,14 +121,18 @@ function Home() {
             </div>
 
             <div class="home-contact-wrapper">
-            <a href="https://github.com/shanushka" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} style={{ color: "#24292e" }} size="2xl" />
+            <a title="Github"
+               href="https://github.com/shanushka" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon className="social-icon" icon={faGithub} style={{ color: "#24292e" }} size="2xl" />
             </a>
-            <a href="https://www.linkedin.com/in/anushka--shrestha/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} size="2xl" style={{ color: "#0077b5" }} />
+            <a title="LinkedIn" href="https://www.linkedin.com/in/anushka--shrestha/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon className="social-icon" icon={faLinkedin} size="2xl" style={{ color: "#0077b5" }} />
             </a>
-            <a href="https://medium.com/@anushkashrestha24" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faMedium} size="2xl" style={{ color: "#000000" }} />
+            <a title="Medium" href="https://medium.com/@anushkashrestha24" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon className="social-icon" icon={faMedium} size="2xl" style={{ color: "#000000" }} />
+            </a>
+            <a title="Mail" href="https://mail.google.com/mail/?view=cm&fs=1&to=anushkashrestha24@gmail.com" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon className="social-icon" icon={faEnvelope} size="2xl" style={{ color: "#000000" }} />
             </a>
           </div>
           </div>
@@ -161,7 +165,7 @@ function Home() {
               }`}
             >
               <img className="thumbpin" src="/Logo/thumb-tack.png"/>
-              <div className="box-content">Projects</div>
+              <div className="box-content">Personal Projects</div>
             </div>
             <div
               onClick={(e) => startTransition(educationRef, "education", e)}

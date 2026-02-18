@@ -1,13 +1,22 @@
 .education-card {
     padding: 20px;
-    border-radius: 4px;
     margin-bottom: 30px;
-    width: 800px;
-    border-left: 4px solid black;
+    width: 600px;
     min-width: 500px;
+    font-size: 20px;
+    margin-right:40px;
+    border-radius: 12px;
+    background: rgba(245, 190, 185, 0.25); /* transparent pink */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
     font-size: 20px;
 }
 
+.education-card-img {
+    width: 80px;
+}
 .education-section-body{
     display: flex;
 }
@@ -37,9 +46,11 @@
 }
 
 .certification-card:hover {
-    background: rgba(255, 255, 255, 0.25); /* brighter */
+    background: rgba(255, 255, 255, 0.35); /* brighter */
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0 8px 32px rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+    cursor: pointer;
   }
 
 .education-card-subtitle {
